@@ -97,14 +97,3 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
-
-- [Express.js](https://expressjs.com/) for the web server
-- [Multer](https://github.com/expressjs/multer) for file handling
-- Java Cryptography Architecture for encryption capabilities
-
-## Contact
-
-Your Name - your.email@example.com
-
-Project Link: [https://github.com/yourusername/modern-encryption-tool](https://github.com/yourusername/modern-encryption-tool)
