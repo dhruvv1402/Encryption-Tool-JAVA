@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Encryption Tool</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <div class="card main-card">
+            <div class="card-header">
+                <div class="logo">🔐</div>
+                <h1>Modern Encryption Tool</h1>
+                <div class="window-controls">
+                    <button class="minimize">_</button>
+                    <button class="maximize">□</button>
+                    <button class="close">×</button>
+                </div>
+            </div>
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="encrypt-tab">Encrypt/Decrypt</button>
+                <button class="tab-btn" data-tab="about-tab">About</button>
+                <button class="tab-btn" data-tab="contact-tab">Contact</button>
+            </div>
+            <div class="card-content">
+                <div class="tab-content active" id="encrypt-tab">
+                    <div class="form-container">
+                        <div class="form-group">
+                            <label for="file">Select File:</label>
+                            <div class="input-group">
+                                <input type="file" id="file" class="file-input">
+                                <div class="file-path-display" id="file-path">No file selected</div>
+                                <button id="browse-btn" class="browse-btn">Browse</button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                        <input type="password" id="password" class="password-input">
+                    </div>
+                    <div class="button-group">
+                        <button id="encrypt-btn" class="action-btn">Encrypt</button>
+                        <button id="decrypt-btn" class="action-btn">Decrypt</button>
+                    </div>
+                    <div class="status-bar">
+                        <div id="status-message">Ready</div>
+                    </div>
+                </div>
+                </div>
+                <div class="tab-content" id="about-tab">
+                    <div class="about-section">
+                        <h2>About This Project</h2>
+                        <p>The Modern Encryption Tool is a secure file encryption and decryption utility that uses industry-standard AES-256 encryption to protect your sensitive files.</p>
+                        
+                        <h3>Features</h3>
+                        <ul>
+                            <li>Strong AES-256 encryption</li>
+                            <li>Password-based key derivation</li>
+                            <li>Simple and intuitive interface</li>
+                            <li>Works with any file type</li>
+                            <li>Secure password handling</li>
+                        </ul>
+                        
+                        <h3>How It Works</h3>
+                        <p>This tool uses a Java backend with AES encryption to securely encrypt and decrypt your files. The password you provide is used to generate a secure encryption key through a key derivation function. Your files never leave your computer during the encryption process.</p>
+                        
+                        <h3>Security Notes</h3>
+                        <p>Always remember your password! There is no way to recover encrypted files if you forget the password used to encrypt them.</p>
+                    </div>
+                </div>
+                <div class="tab-content" id="contact-tab">
+                    <div class="contact-section">
+                        <h2>Developer Contact</h2>
+                        <div class="developer-info">
+                            <div class="developer-avatar">👨‍💻</div>
+                            <div class="developer-details">
+                                <h3>John Doe</h3>
+                                <p>Security Software Engineer</p>
+                                <p><strong>Email:</strong> john.doe@example.com</p>
+                                <p><strong>GitHub:</strong> <a href="https://github.com/johndoe" target="_blank">github.com/johndoe</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-form">
+                            <h3>Send a Message</h3>
+                            <div class="form-group">
+                                <label for="contact-name">Name:</label>
+                                <input type="text" id="contact-name" class="contact-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Email:</label>
+                                <input type="email" id="contact-email" class="contact-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-message">Message:</label>
+                                <textarea id="contact-message" class="contact-textarea"></textarea>
+                            </div>
+                            <button class="action-btn contact-submit">Send Message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
