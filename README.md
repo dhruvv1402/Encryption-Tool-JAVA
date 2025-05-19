@@ -14,9 +14,6 @@ A secure file encryption and decryption utility with a modern UI that uses indus
 - **Cross-Platform**: Works on Windows, macOS, and Linux
 - **File Type Support**: Works with any file type and size
 
-## Screenshots
-
-*Add screenshots of your application here*
 
 ## Requirements
 
